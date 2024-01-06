@@ -203,9 +203,24 @@ p:hover {
 
         img:hover {
             transform: scale(1.1);
-			opacity: 0.8;
+			opacity: 0.5;
+        }
+		        .video-container {
+            max-width: 400px;
+            margin: 10px;
         }
 
+        video {
+            max-width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        video:hover {
+            transform: scale(1.1) rotate(5deg) translate(2px, -2px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
 		
     </style>
 </head>
@@ -283,25 +298,54 @@ p:hover {
             <!-- Replace the src attribute with your post image URL -->
     <div class="gallery">
     	
-	    <a href="https://www.instagram.com/p/C1D346AxteM/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="https://scontent.cdninstagram.com/v/t51.2885-15/412101546_319564054321501_2243369122745376174_n.heic?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi44NTR4MTA2Ny5zZHIifQ&_nc_ht=scontent.cdninstagram.com&_nc_cat=101&_nc_ohc=5yfNLitrWEEAX_2Anhw&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzI2MTY5NjM1ODI4NTIzNjEwOA%3D%3D.2-ccb7-5&oh=00_AfBYkoyZS9uKFqewJUNLnYjyimHmNwDynYYNj0VN-qVZzw&oe=659C6B0E&_nc_sid=10d13b" alt="Photo 2" class="photo"></a>
-        <a href="https://www.instagram.com/reel/CuzG_VgOIPs/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="https://lh5.googleusercontent.com/p/AF1QipMqb0XomZ4b1oOOXz8UHvW7lk-IEzlb4Q7KeDaI=w141-h235-n-k-no-nu" alt="Photo 2" class="photo"></a>
-		<img src="https://media.istockphoto.com/id/951444260/photo/luxury-wedding-reception-in-restaurant-stylish-decor-and-adorning-restaurant-table-with-food.jpg?s=612x612&w=0&k=20&c=Md-v2c2Vk0t0qCUPK6QThKK7TYd4DuEXnwssyz4ImmE=" alt="Photo 1" class="photo">
-		<img src="https://media.istockphoto.com/id/1398955269/photo/floral-decorations-on-the-wedding-table.jpg?s=612x612&w=0&k=20&c=eF5CJX4Lnh0psbgasVw7ZBtYq4dRpLvFKun9WOlbgxU=" alt="Photo 2" class="photo">
-		<img src="https://images.unsplash.com/photo-1600547224355-10c6482872ca?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdlZGRpbmclMjBzdGFnZXxlbnwwfHwwfHx8MA%3D%3D" alt="Photo 1" class="photo">
-		<img src="https://images.unsplash.com/photo-1529636798458-92182e662485?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdlZGRpbmclMjBzdGFnZXxlbnwwfHwwfHx8MA%3D%3D" alt="Photo 1" class="photo">
-		<img src="https://plus.unsplash.com/premium_photo-1675074445753-89c6fcb31e53?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2VkZGluZyUyMHN0YWdlfGVufDB8fDB8fHww" alt="Photo 2" class="photo">
-        <img src="https://images.unsplash.com/photo-1513278974582-3e1b4a4fa21e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdlZGRpbmclMjBzdGFnZXxlbnwwfHwwfHx8MA%3D%3D" alt="Photo 2" class="photo">
-		<img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d2VkZGluZyUyMHN0YWdlfGVufDB8fDB8fHww" alt="Photo 2" class="photo">
-        <img src="https://images.unsplash.com/photo-1513278974582-3e1b4a4fa21e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdlZGRpbmclMjBzdGFnZXxlbnwwfHwwfHx8MA%3D%3D" alt="Photo 2" class="photo">
-		<img src="https://images.unsplash.com/photo-1464047736614-af63643285bf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdlZGRpbmclMjBzdGFnZXxlbnwwfHwwfHx8MA%3D%3D" alt="Photo 1" class="photo">
-		<img src="https://media.istockphoto.com/id/1278866955/photo/wedding-reception-table-for-wedding-couple-with-bride-and-groom-wording.jpg?s=1024x1024&w=is&k=20&c=k9OAfxUjmkxS9hfBX2A0WYh-cHNF4sWR9AfIc0gHJOY=" alt="Photo 2" class="photo">
-		<img src="https://media.istockphoto.com/id/470548502/photo/wedding-reception.jpg?s=612x612&w=0&k=20&c=OGlnuYR2a1cl_1k4we4IOFERxBYzOpCy2JOdMskC1GE=" alt="Photo 1" class="photo">
-        
-		<img src="https://media.istockphoto.com/id/1311246266/photo/luxury-beige-shoes-on-high-heels-and-bridal-bouquet-in-blur-on-lavender-chesterfield-sofa.jpg?s=1024x1024&w=is&k=20&c=qrdbq_DsGcKO51UOsWAt945rE6Fa4XYDEu7I4E_pEMA=" alt="Photo 1" class="photo">
-    </div>
-        </div>
-    </div>
+		
+		
+		
+		
+		
+		
+		
+		<img src="" class="photo">
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="video-container">
+    <video autoplay muted loop>
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+	    </div>
+        </div>
+        </div>
+        </div>
 </p>
 <p align=center>
     <a href="https://maps.app.goo.gl/ME5vP9611LoKYdwc8" style="color: #fff; text-decoration: none; transition: transform 0.3s ease-in-out;">
