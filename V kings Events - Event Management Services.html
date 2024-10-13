@@ -11,23 +11,38 @@
             color: #fff;
             margin: 0;
             padding: 0;
-            text-align: center;
         }
-        
+
         header {
             padding: 20px;
             background-color: #333;
+            text-align: center;
         }
 
-        .video-container {
-            position: relative;
-            width: 100%;
-            max-width: 600px;
-            margin: 20px auto;
-            overflow: hidden;
+        .media-gallery {
+            display: flex;
+            overflow-x: auto;
+            padding: 20px;
+            scroll-snap-type: x mandatory;
         }
 
-        .video-container video {
+        .media-gallery::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .media-gallery::-webkit-scrollbar-thumb {
+            background-color: #444;
+            border-radius: 10px;
+        }
+
+        .media-item {
+            min-width: 300px;
+            margin-right: 20px;
+            scroll-snap-align: start;
+        }
+
+        .media-item video,
+        .media-item img {
             width: 100%;
             height: auto;
             border-radius: 10px;
@@ -45,26 +60,17 @@
             transform: scale(1.05);
         }
 
-        .icon-link img {
-            vertical-align: middle;
-            margin-right: 5px;
-        }
-
         footer {
             padding: 20px;
             background-color: #333;
+            text-align: center;
             font-size: 14px;
             color: #aaa;
         }
 
         @media only screen and (max-width: 768px) {
-            .video-container {
-                width: 90%;
-            }
-
-            .icon-link img {
-                height: 20px;
-                width: 20px;
+            .media-item {
+                min-width: 200px;
             }
         }
     </style>
@@ -76,26 +82,33 @@
         <p>Event Management Services</p>
     </header>
 
-    <!-- Video Section -->
+    <!-- Horizontal Media Scrolling Section -->
     <section>
-        <div class="video-container">
-            <a href="https://www.instagram.com/reel/CtVm0ThpRP0/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">
-                <video autoplay muted loop>
-                    <source src="https://github.com/Vkingsevent/Vkingsevent.io/assets/155812224/a96c0d7b-6473-40ad-a72e-2f7bc940fcc4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </a>
-        </div>
-    </section>
+        <div class="media-gallery">
+            <!-- Video Item -->
+            <div class="media-item">
+                <a href="https://www.instagram.com/reel/CtVm0ThpRP0/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">
+                    <video autoplay muted loop>
+                        <source src="https://github.com/Vkingsevent/Vkingsevent.io/assets/155812224/a96c0d7b-6473-40ad-a72e-2f7bc940fcc4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </a>
+            </div>
 
-    <!-- About Section -->
-    <section>
-        <p align="center">
-            <a href="https://maps.app.goo.gl/ME5vP9611LoKYdwc8" class="icon-link">
-                <img src="https://cdn2.iconfinder.com/data/icons/pittogrammi/142/95-512.png" height="25" width="25">
-                About
-            </a>
-        </p>
+            <!-- Add more media items here (Images, Videos, etc.) -->
+            <div class="media-item">
+                <img src="https://via.placeholder.com/600x400" alt="Placeholder Image 1">
+            </div>
+
+            <div class="media-item">
+                <img src="https://via.placeholder.com/600x400" alt="Placeholder Image 2">
+            </div>
+
+            <div class="media-item">
+                <img src="https://via.placeholder.com/600x400" alt="Placeholder Image 3">
+            </div>
+
+        </div>
     </section>
 
     <!-- Footer -->
