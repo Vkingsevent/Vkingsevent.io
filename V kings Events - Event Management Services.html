@@ -36,9 +36,13 @@
         }
 
         .media-item {
-            min-width: 300px;
+            flex: 1 0 auto;  /* Each media item takes full available width */
             margin-right: 20px;
             scroll-snap-align: start;
+        }
+
+        .media-item:last-child {
+            margin-right: 0;
         }
 
         .media-item video,
@@ -70,7 +74,7 @@
 
         @media only screen and (max-width: 768px) {
             .media-item {
-                min-width: 200px;
+                flex: 1 0 100%;  /* Full width for smaller screens */
             }
         }
     </style>
@@ -95,17 +99,25 @@
                 </a>
             </div>
 
-            <!-- Add more media items here (Images, Videos, etc.) -->
+            <!-- Image Item -->
             <div class="media-item">
-                <img src="https://via.placeholder.com/600x400" alt="Placeholder Image 1">
+                <a href="https://via.placeholder.com/600x400">
+                    <img src="https://via.placeholder.com/600x400" alt="Placeholder Image 1">
+                </a>
             </div>
 
+            <!-- Image Item -->
             <div class="media-item">
-                <img src="https://via.placeholder.com/600x400" alt="Placeholder Image 2">
+                <a href="https://via.placeholder.com/600x400">
+                    <img src="https://via.placeholder.com/600x400" alt="Placeholder Image 2">
+                </a>
             </div>
 
+            <!-- Image Item -->
             <div class="media-item">
-                <img src="https://via.placeholder.com/600x400" alt="Placeholder Image 3">
+                <a href="https://via.placeholder.com/600x400">
+                    <img src="https://via.placeholder.com/600x400" alt="Placeholder Image 3">
+                </a>
             </div>
 
         </div>
